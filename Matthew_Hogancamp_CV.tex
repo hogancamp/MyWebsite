@@ -1,0 +1,892 @@
+\documentclass[12pt]{amsart}
+%\usepackage{comment, color}
+%\usepackage[T1]{fontenc}
+%\usepackage{duerer}
+\usepackage{etex}
+\usepackage{enumitem}
+\usepackage[margin=1in, top=1in]{geometry}
+
+
+
+\setlength{\parindent}{1.1em}
+\setlength{\parskip}{0em}
+
+
+%%%%%%%%% SYMBOLS ETC
+\usepackage[latin1]{inputenc}
+\usepackage{amssymb,amsfonts,euscript}
+\usepackage{amsthm,amsmath,stmaryrd,latexsym}
+%\usepackage[nohug]{diagrams}
+%\usepackage{palatino, euscript}
+%\usepackage{hyperref}
+%\usepackage{natbib}
+
+
+
+
+
+
+%%%%%%%%%% PRETTY REFERENCING
+
+\RequirePackage{color}
+\definecolor{myred}{rgb}{0.75,0,0}
+\definecolor{mygreen}{rgb}{0,0.5,0}
+\definecolor{myblue}{rgb}{0,0,0.65}
+
+
+
+\RequirePackage{ifpdf}
+\ifpdf
+  \IfFileExists{pdfsync.sty}{\RequirePackage{pdfsync}}{}
+  \RequirePackage[pdftex,
+   colorlinks = true,
+   urlcolor = myblue, % \href{...}{...} external (URL)
+   citecolor = mygreen, % \cite{...}
+   linkcolor = myred, % \ref{...} and \pageref{...}
+   pagebackref,
+%   pdfpagemode=Non,e
+   bookmarksopen=true]{hyperref}
+\else
+  \RequirePackage[hypertex]{hyperref}
+\fi
+
+%\RequirePackage{ae, aecompl, aeguill} % to have pretty pdf
+
+
+
+\renewcommand{\i}{\indent}
+\renewcommand{\j}{\indent}
+\renewcommand{\v}{\vskip5pt }
+\newcommand{\w}{\vskip5pt}
+\newcommand{\newitem}[1]{\noindent\textsc{#1:}\vskip5pt  }
+\renewcommand{\sl}{\mathfrak{sl}}
+\newcommand{\conf}{}%{(\textbf{C})}
+\newcommand{\sem}{(\textbf{S}}
+
+
+%\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\cfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
+
+\newcommand{\lm}{1em}
+\newcommand{\ii}{0pt}
+\begin{document}
+%
+\thispagestyle{empty}
+\noindent{\Huge Matthew T.~Hogancamp \hfill Curriculum Vitae }
+\vskip5pt
+\noindent
+
+\noindent
+Northeastern University \hfill  email: m.hogancamp@northeastern.edu\\
+Department of  Mathematics  \hfill  office: Lake 447\\
+360 Huntington Ave, Boston, MA 02115  \vskip 4pt
+
+%University of Southern California \hfill  email: hogancam@usc.edu\\
+%Department of  Mathematics  \hfill  phone: (213) 740-3764\\
+%3620 S. Vermont Ave., KAP 104 \hfill website: \href{http://www-bcf.usc.edu/~hogancam}{www-bcf.usc.edu/$\sim$hogancam}\\
+%Los Angeles, CA 90089-2532\vskip 4pt
+
+
+\hrule
+\vskip14pt
+
+
+%\vskip 9pt
+%\newitem{Address} \j \begin{minipage}{3in} Indiana University Department of  Mathematics\\ 831 E. Third St.\\ Bloomington, IN  47405\end{minipage} \hfill %\begin{minipage}{2in}\flushright \textsc{Home} \\ 5700 Blandville Rd. \\ Paducah, KY  42001\end{minipage}
+%\vskip 8pt
+
+\newitem{Positions Held}
+
+\begin{itemize}[leftmargin=\lm,itemindent=\ii]
+\item[$\cdot$]\textbf{Northeastern University}\\ 
+Assistant Professor of Mathematics (September 2019 - present)\v
+
+\item[$\cdot$]\textbf{University of Southern California}\\
+Assistant Professor (non-tenure-track) (July 2016-July 2018)\\
+Buseman Assistant Professor (non-tenure track) (August 2018 to July 2019)\\
+Mentor: Aaron~Lauda \v
+%\j Mentor: Aaron Lauda\v
+
+\item[$\cdot$]\textbf{Indiana University, Bloomington}\\
+Zorn Post-Doctoral Fellow (August 2013-May 2016)\\
+Mentor: Vladimir~Turaev \v
+%\j Mentor: Vladimir Turaev\v
+\end{itemize}
+
+%\j\textbf{Isaac Newton Institute}, Cambridge England\\
+%\j Program Participant, Homology theories in low-dimensional topology (May 2017-June 2017)\v
+%
+%\j\textbf{Max Planck Institute for Mathematics}, Bonn, Germany\\
+%\j Program Participant,  Semester on 4-manifolds and their combinatorial invariants (January 2013 - June 2013)\v
+
+
+\newitem{Education}
+\begin{itemize}[leftmargin=\lm,itemindent=\ii]
+\item[$\cdot$]\textbf{University of Virginia}, Ph.D.~Math (August 2013)\\ Advisor: Vyacheslav Krushkal\\
+ Thesis: ``Local and quasi-local $\sl_2$ link homology''\v
+
+\item[$\cdot$]\textbf{University of Notre Dame}, B.S. Physics and Honors Mathematics (May 2006) \v
+\end{itemize}
+
+\newitem{Awards and Grants}
+\begin{itemize}[leftmargin=\lm,itemindent=\ii]
+\item[$\cdot$] NSF grant DMS 1702274 ``Categorical Diagonalization, Representation Theory, and Link Homology'' (July 1, 2017- June 30 2020)\v
+
+\item[$\cdot$] UVA Graduate School of Arts and Sciences Dissertation Year Fellowship (2012-2013)\v
+
+\item[$\cdot$] Government Assistance in Areas of National Need (GAANN) Fellowship (2007-2012)\v
+\end{itemize}
+
+
+\newitem{Research Interests}
+\begin{itemize}[leftmargin=\lm,itemindent=\ii]
+\item[$\cdot$] Low dimensional topology, quantum topology, categorification, representation theory \v
+\end{itemize}
+
+\newitem{Peer-reviewed Journal Publications}
+%\j{\em On functoriality of the categorified colored Jones polynomial}\\
+%\j(in preparation).
+
+\begin{enumerate}\setlength{\itemsep}{7pt}
+\item {\bf On unification of colored annular sl(2) knot homology}\\
+Advances in Mathematics, Volume 468, Article 110206 (2025)\\
+Coauthors: A.~Beliakova, K.~Putyra, S.~Wehrli\\
+Links: (\href{https://arxiv.org/abs/2305.02977}{arxiv:2305.02977}) (\href{https://doi.org/10.1016/j.aim.2025.110206}{DOI=10.1016/j.aim.2025.110206})
+%Volume 468, May 2025, 110206
+%https://doi.org/10.1016/j.aim.2025.110206
+
+
+\item {\bf A Kirby Color for Khovanov homology}\\
+Journal of the European Mathematical Society, published online first, volume information n/a (2025)\\ 
+Coauthors: D.~Rose and P.~Wedrich \\
+Links: (\href{https://arxiv.org/abs/2210.05640}{arxiv:2210:05640}) (\href{https://doi.org/10.4171/JEMS/1589}{DOI=10.4171/JEMS/1589})
+% journal:  (2025), published online first DOI 10.4171/JEMS/1589
+
+\item {\bf Link splitting deformation of colored Khovanov--Rozansky homology}\\Proceedings of the London Mathematical Society, Volume 129 (3), pages n/a (2024)\\
+Coauthors: D.~Rose and P.~Wedrich\\
+Links:  (\href{https://arxiv.org/abs/2107.09590}{arxiv:2107.09590}) (\href{https://doi.org/10.1112/plms.12620}{DOI=10.1112/plms.12620})
+% journal: 
+% library: Proceedings of the London Mathematical Society, 2024-09, Vol.129 (3), p.n/a
+
+\item {\bf Tautological classes and symmetry in Khovanov-Rozansky homology}\\
+Duke Mathematical Journal, Volume 173(13), pages 2481-2561 (2024)\\
+Coauthors: E.~Gorsky, A.~Mellit \\
+Links:  (\href{https://arxiv.org/abs/2103.01212}{arxiv:2103.01212}) (\href{https://doi.org/10.1215/00127094-2023-0063}{DOI=10.1215/00127094-2023-0063})
+% NEU library: 2024-09, Vol.173 (13)
+% journal: Duke Math. J. 173(13): 2481-2561 (15 September 2024). DOI: 10.1215/00127094-2023-0063
+
+\item {\bf On the functoriality of sl(2) tangle homology}\\
+Algebraic and Geometric Topology, 23:3 (2023) pages 1303-1361\\
+Coauthors: A.~Beliakova, K.~Putyra, S.~Wehrli\\
+Links: (\href{https://arxiv.org/abs/1903.12194}{arxiv:1903.12194}) (\href{https://doi.org/10.2140/agt.2023.23.1303}{DOI: 10.2140/agt.2023.23.1303})
+
+
+\item {\bf Derived traces of Soergel categories}\\
+International Mathematical Research Notices, Volume 2022, Issue 15, pages 11304-11400 (2022)\\
+Coauthors: E.~Gorsky and P.~Wedrich\\ 
+Links: (\href{https://arxiv.org/abs/2002.06110}{arxiv:2002.06110}) (\href{https://doi.org/10.1093/imrn/rnab019}{DOI:10.1093/imrn/rnab019})
+
+\item{\bf Hilbert schemes and y-ification of Khovanov-Rozansky homology}\\
+Geometry and Topology 26, pages 587-678 (2022)\\
+Coauthor: E.~Gorsky\\ 
+Links: (\href{https://arxiv.org/abs/1712.03938}{arxiv:1712.03938}) (\href{https://doi.org/10.2140/gt.2022.26.587}{DOI:10.2140/gt.2022.26.587})
+
+\item {\bf The Fukaya category of the pillowcase, traceless character varieties, and Khovanov cohomology}\\
+Transactions of the American Mathematical Society 373(12) pp 8391-8437 (2020)\\
+Coauthors: M.~Hedden, C.~M.~Herald, and P.~ Kirk\\
+Links: (\href{https://arxiv.org/abs/1808.06957}{arxiv:1808.06957}) (\href{https://www.ams.org/journals/tran/2020-373-12/S0002-9947-2020-08116-1/}{AMS website})
+%Trans. Amer. Math. Soc. 373 (2020), 8391-8437
+
+
+\item{\bf Morphisms between categorified spin networks},\\
+Journal of Knot Theory and Ramifications, Volume 29, No. 11, 2050045 (2020)\\
+Links: (\href{http://arxiv.org/abs/1209.2732}{arxiv:1209.2732}) (\href{https://doi.org/10.1142/S0218216520500455}{DOI:10.1142/S0218216520500455})
+
+\item {\bf Serre duality for Khovanov-Rozansky homology}\\
+Selecta Mathematica, Volume 25, article 79 (2019)\\
+Coauthors: E.~ Gorsky, A. Mellit, K.~ Nagane\\
+Links: (\href{http://arxiv.org/abs/1902.08281}{arxiv:1902.08281}) (\href{https://doi.org/10.1007/s00029-019-0524-5}{DOI:10.1007/s00029-019-0524-5})
+
+
+\item {\bf A polynomial action on colored $\sl_2$ link homology}\\
+Quantum Topology 10, no. 1, pages 1-75  (2019)\\
+Links: (\href{http://arxiv.org/abs/1405.2574}{arxiv:1405.2574}) (\href{https://doi.org/10.4171/QT/122}{DOI:10.4171/QT/122})
+
+
+\item {\bf On the computation of torus link homology}\\
+Compositio Mathematica 155(1), pages 164-205  (2019)\\
+Coauthor: B.~Elias\\
+Links: (\href{http://arxiv.org/abs/1603.00407}{arxiv:1603.00407}) (\href{https://doi.org/10.1112/S0010437X18007571}{DOI:10.1112/S0010437X18007571})
+%Compositio Mathematica. 2019;155(1):164-205. doi:10.1112/S0010437X18007571
+
+
+\item {\bf A DG-extension of symmetric functions arising from higher representation theory}\\
+Journal of Combinatorial Algebra, Volume 2, No. 2, pages 169-214 (2018)\\
+Coauthors:  A.~Appel, I.~Egilmez, and A.~Lauda\\
+Links: (\href{http://arxiv.org/abs/1704.00713}{arxiv:1704.00713}) (\href{https://doi.org/10.4171/JCA/2-2-3}{DOI:10.4171/JCA/2-2-3})
+
+
+\item {\bf Categorified Young symmetrizers and stable homology of torus links}\\
+Geometry and Topology 22, pages 2943-3002 (2018)\\
+Links: (\href{http://arxiv.org/abs/1505.08148}{arxiv:1505.08148}) (\href{https://doi.org/10.2140/gt.2018.22.2943}{DOI:10.2140/gt.2018.22.2943
+})
+
+\item {\bf Categorified Young symmetrizers and stable homology of torus links II}\\
+Selecta Mathematica, Volume 23, pages 1739-1801 (2017)\\
+Coauthor: M.~Abel\\
+Links: (\href{http://arxiv.org/abs/1510.05330}{arxiv:1510.05330})  (\href{https://doi.org/10.1007/s00029-017-0336-4}{DOI:10.1007/s00029-017-0336-4})
+
+
+\item {\bf An exceptional collection for Khovanov homology}\\
+Algebraic and Geometric Topology 15, pages 2659-2706 (2015)\\
+Coauthor: B.\ Cooper\\
+Links: (\href{http://arxiv.org/abs/1209.1002}{arxiv:1209.1002}) (\href{https://doi.org/10.2140/agt.2015.15.2659}{DOI:10.2140/agt.2015.15.2659})
+
+
+\item {\bf SO(3) Homology of Graphs and Links}
+Algebraic and Geometric Topology 11, pages 2137-2166 (2011)\\
+Coauthors: V.~ Krushkal and B.~ Cooper\\
+Links: (\href{http://arxiv.org/abs/1012.3672}{arxiv:1012.3672}) (\href{https://doi:org/10.2140/agt.2011.11.2137}{DOI:10.2140/agt.2011.11.2137})
+\end{enumerate}
+
+\newitem{Papers Accepted for Publication}
+
+\begin{enumerate}
+\item{\bf Categorical diagonalization of full twists}, with B.~Elias,\\
+Duke Mathematical Journal (peer-reviewed, accepted in 2024)\\
+Link: (\href{https://arxiv.org/abs/1801.00191}{arxiv:1801.00191})
+\end{enumerate}
+
+\newitem{Preprints}
+
+\begin{enumerate}\setlength{\itemsep}{7pt}
+\item {\bf Stable deformed $\mathfrak{gl}_N$ homology of torus knots}, with W.~Ballinger, E.~Gorsky, J.~Wang, (2025) (\href{https://arxiv.org/abs/2507.00175}{arxiv:2507.00175}
+
+\item {\bf Envelopes and the bar complex}, (2024) (\href{https://arxiv.org/abs/2501.00122}{arxiv:2501.00122})
+
+\item {\bf  Drinfeld centralizers and Rouquier complexes}, with B.~Elias, \\  2024, (\href{https://arxiv.org/abs/2412.20633}{arXiv:2412.20633})
+
+\item{\bf Khovanov--Rozansky homology of Coxeter knots and Schr\"oder polynomials for paths under any line}, with C.~Caprau, N.~Gonazalez, and M.~Mazin (2024) (\href{https://arxiv.org/abs/2407.18123}{arxiv:2407.18123})
+
+\item {\bf Bordered invariants from Khovanov homology}, with D.~Rose and P.~Wedrich (2024) (\href{https://arxiv.org/abs/2404.06301}{arxiv:2404.06301})
+
+%\item {\bf On unification of colored annular sl(2) knot homology}, with A.~Beliakova, K.~Putyra, S.~Wehrli,  (2023) (\href{https://arxiv.org/abs/2305.02977}{arxiv:2305.02977})
+
+%\item {\bf A Kirby color for Khovanov homology}, with D.~Rose and P.~Wedrich, (2022) (\href{https://arxiv.org/abs/2210.05640}{arxiv:2210:05640})
+%
+%\item {\bf Link splitting deformation of colored Khovanov--Rozansky homology}, with D.~Rose and P.~Wedrich, (2021)  (\href{https://arxiv.org/abs/2107.09590}{arxiv:2107.09590})
+
+
+\item{\bf A skein relation for singular Soergel bimodules}, with D.~Rose and P.~Wedrich,  (2021) (\href{https://arxiv.org/abs/2107.08117}{arxiv:2107.08117})
+
+
+%\item {\bf Tautological classes and symmetry in Khovanov-Rozansky homology}, with E.~Gorsky and A.~Mellit, (2021) (\href{https://arxiv.org/abs/2103.01212}{arxiv:2103.01212})
+
+
+\item {\bf Constructing categorical idempotents}, (2019) (\href{https://arxiv.org/abs/2002.08905}{arxiv:2002.08905})
+
+
+%\item {\bf Derived traces of Soergel categories}, with E.~Gorsky and P.~Wedrich, \\ IMRN (2022) (\href{https://arxiv.org/abs/2002.06110}{arxiv:2002.06110})
+
+\item {\bf Homological perturbation theory with curvature}, 2019 (\href{https://arxiv.org/abs/1912.03843}{arxiv:1912.03843})
+
+\item {\bf Torus link homology}, with A.~Mellit, (2019) (\href{https://arxiv.org/abs/1909.00418}{arxiv:1909.00418})
+
+
+
+%\item {\bf On the functoriality of sl(2) tangle homology}, with A.~Beliakova, K.~Putyra, S.~Wehrli, (2019) (\href{https://arxiv.org/abs/1903.12194}{arxiv:1903.12194})
+
+
+
+\item {\bf Ext-enhanced monoidal Koszul duality for GL(2)}, with S.~Makisumi (2019) (\href{https://arxiv.org/abs/1903.00461}{arxiv:1903.00461})
+
+
+%\item {\bf Serre duality for Khovanov-Rozansky homology},
+% with E.~ Gorsky, A. Mellit, K.~ Nagane, \\ Selecta Mathematica (2019) (\href{http://arxiv.org/abs/1902.08281}{arxiv:1902.08281})
+
+
+%\item {\bf The Fukaya category of the pillowcase, traceless character varieties, and Khovanov cohomology}, 
+% with M.~Hedden, C.~M.~Herald, and P.~ Kirk, 
+% \\ Transactions of the AMS (2020) (\href{https://arxiv.org/abs/1808.06957}{arxiv:1808.06957})
+
+
+%\item{\bf Categorical diagonalization of full twists}, with B.~Elias, 2018 (\href{https://arxiv.org/abs/1801.00191}{arxiv:1801.00191})
+%
+%\item{\bf Hilbert schemes and y-ification of Khovanov-Rozansky homology}, with E.~Gorsky, (2017) (\href{https://arxiv.org/abs/1712.03938}{arxiv:1712.03938})
+
+\item{\bf An involutive upsilon invariant}, with C.~Livingston, (2017)\\
+(\href{http://arxiv.org/abs/1710.08360}{arxiv:1710.08360})
+
+
+\item{\bf Categorical diagonalization}, with B.~Elias, (2017) (\href{http://arxiv.org/abs/1707.04349}{arxiv:1707.04349})
+
+\item{\bf Khovanov-Rozansky homology and higher Catalan sequences}, (2017)\\
+(\href{http://arxiv.org/abs/1704.01562}{arxiv:1704.01562})
+
+%\item {\bf A DG-extension of symmetric functions arising from higher representation theory},\\
+% with A.~Appel, I.~Egilmez, and A.~Lauda,\\
+%Journal of Combinatorial Algebra (2018) (\href{http://arxiv.org/abs/1704.00713}{arxiv:1704.00713})
+%
+
+
+\item{\bf Idempotents in triangulated monoidal categories} (2017) (\href{http://arxiv.org/abs/1703.01001}{arxiv:1703.01001})
+
+%
+%\item {\bf On the computation of torus link homology}, with B.~Elias\\
+%  Compositio Mathematica (2019) (\href{http://arxiv.org/abs/1603.00407}{arxiv:1603.00407}).
+%  
+%\item {\bf Categorified Young symmetrizers and stable homology of torus links II}, with M.~Abel, \\
+% Selecta Mathematica (2017) (\href{http://arxiv.org/abs/1510.05330}{arxiv:1510.05330}) 
+%
+%\item {\bf Categorified Young symmetrizers and stable homology of torus links},\\
+%Geometry and Topology (2018) (\href{http://arxiv.org/abs/1505.08148}{arxiv:1505.08148})
+%
+%\item {\bf A polynomial action on colored $\sl_2$ link homology},\\ Quantum Topology 10 (2019), no. 1, 1--75 (\href{http://arxiv.org/abs/1405.2574}{arxiv:1405.2574}) 
+%
+%\item{\bf Morphisms between categorified spin networks},\\
+% Journal of Knot Theory and Ramifications (\href{http://arxiv.org/abs/1209.2732}{arxiv:1209.2732})
+%
+%
+%\item {\bf An exceptional collection for Khovanov homology}, with B.\ Cooper,\\
+%Algebraic and Geometric Topology (2015) (\href{http://arxiv.org/abs/1209.1002}{arxiv:1209.1002})
+%
+%
+%\item {\bf SO(3) Homology of Graphs and Links}, with V.~ Krushkal and B.~ Cooper,\\
+%Algebraic and Geometric Topology (2011) (\href{http://arxiv.org/abs/1012.3672}{arxiv:1012.3672})
+\end{enumerate}
+
+
+
+\newitem{Invited talks}
+%\noindent Conference talks are indicated by \conf. 
+%\j {\em Title TBA} \\
+\begin{itemize}\setlength{\itemsep}{5pt}
+\item[$\cdot$] Conference ``Modern tools in low-dimensional topology'' ICTP, Trieste, Italy\\
+\j\emph{Categorification of the Turaev--Viro TQFT} (\href{https://indico.ictp.it/event/10839/session/7/contribution/37}{link}) \hfill June 2025
+
+\item[$\cdot$] University of Hamburg seminar on Quantum Topology and Categorification\\ \j\emph{Towards a categorification of the Turaev-Viro TQFT} (\href{https://www.math.uni-hamburg.de/home/wedrich/ResSemArchive.html}{link}) \hfill June 2024
+
+\item[$\cdot$] Simons Semester on ``Knots, Homologies, and Physics'', Warsaw\\ \j 4 part lecture series \emph{Link homology and how to compute it} (\href{https://simons2024.fuw.edu.pl/}{link}) \hfill June 2024
+
+\item[$\cdot$]  Representation theory and related topics seminar, NEU\\
+\j \emph{Towards a categorification of the Turaev-Viro TQFT} \hfill March 2024
+
+\item[$\cdot$] Conference on ``Geometric and categorical representation theory'', Besse-et-Saint-Anastaise, France\\
+\j 4 lecture minicourse \emph{DG trace and center of Hecke categories} (\href{https://indico.math.cnrs.fr/event/9436/}{link}) \hfill October 2023
+
+\item[$\cdot$] Columbia University SGGT seminar\\ \j\emph{Khovanov homology and handleslides}\hfill September 2023
+
+\item[$\cdot$] Dartmouth Topology Seminar \\
+\j\emph{Khovanov homology and handleslides} (\href{https://math.dartmouth.edu/~topology/2023-2024.html}{link})\hfill October 2023
+
+\item[$\cdot$] University of Hamburg seminar Quantum Topology and Categorification
+\\ \j\emph{Handleslides and representation of fiber functors} (\href{https://www.math.uni-hamburg.de/home/wedrich/ResSemArchive.html}{link}) \hfill June 2023
+
+\item[$\cdot$] Berkeley Combinatorics Seminar \\ \j \emph{How to compute some superpolynomials} (\href{https://events.berkeley.edu/math/event/197125-combinatorics-seminar-how-to-compute-some}{link})\hfill May 2023
+
+\item[$\cdot$] Berkeley Representation Theory Seminar \\
+\j\emph{The nilpotent cone for sl2 and annular link homology} (\href{https://math.berkeley.edu/~sashau/spring23-tenscat}{link}) \hfill May 2023
+
+\item[$\cdot$] Maurice Auslander Distinguished Lectures \\ \j
+\emph{Constructions in homological algebra via graphical calculus} \hfill  April 2023
+
+\item[$\cdot$] Special session ``Algebraic Structures in Knot Theory'', AMS meeting, Fresno \\ \j 
+\emph{The annular Bar-Natan category and handle slides} (\href{https://www.ams.org/meetings/sectional/2293_special.html}{link}) \hfill May 2023 
+
+\item[$\cdot$] NEAT MAPS conference, Northeastern University \\ \j
+\emph{Link homology operations} (\href{https://brianrwilliams.github.io/neatmaps/NEATMAPS_2023_Abstracts.pdf}{link}) \hfill April 2023
+
+\item[$\cdot$] Harvard Gauge Theory and Topology Seminar
+\\ \j\emph{The annular Bar-Natan category and handle-slides} (\href{The annular Bar-Natan category and handle-slides
+https://www.math.harvard.edu/event/the-annular-bar-natan-category-and-handle-slides/}{link})\hfill March 2023
+
+\item[$\cdot$] MIT Topology Seminar \\ \j \emph{Khovanov homology and handle-slides} \hfill December 2022
+
+\item[$\cdot$] UNC Geometric Methods in Representation Theory Seminar \\ \j \emph{The dotted Temperley-Lieb category and handle-slides} (\href{https://math.unc.edu/event/dr-matt-hogancamp-northeastern-tba/}{link})\hfill November 2022
+
+\item[$\cdot$] Fourth Canada-Mexico-USA Conference in Representation Theory \emph{etc}, Northeastern University\\ \j
+\emph{Cell theory and categorical idempotents in tensor categories} (\href{https://sites.google.com/view/canadausmexico-2022/home?authuser=0}{link})\hfill June 2022
+
+
+\item[$\cdot$] Stanford topology seminar\\ \j \emph{A Kirby color for Khovanov homology} (\href{https://mathematics.stanford.edu/events/kirby-color-khovanov-homology}{link}) \hfill May 2022
+
+\item[$\cdot$] Georgia Topology conference\\ \j\emph{A Kirby color for Khovanov homology} (\href{https://topology.franklinresearch.uga.edu/2022GTC}{link}) \hfill May 2022
+
+\item[$\cdot$] TRAC seminar (virtual)\\
+\j \emph{Idempotent (co)algebras and generalizations of Hochschild cohomology} (\href{zhttps://researchseminars.org/seminar/TRAC}{link})\hfill February 2022
+
+\item[$\cdot$] Workshop ``Braids in Representation Theory and Algebraic Combinatorics'', ICERM,\\
+\j\emph{Higher structure and symmetry in Khovanov--Rozansky homology} (\href{https://icerm.brown.edu/program/semester_program_workshop/sp-s22-w1}{link}),\hfill February 2022
+
+\item[$\cdot$]  University of Virginia Algebra Seminar ,\\
+\j \emph{Higher algebraic structure in link homology} (\href{https://math.virginia.edu/seminars/algebra/2021-22/}{link}) \hfill December 2021
+
+
+\item[$\cdot$]University of Virginia Colloquium,\\
+\j \emph{Categorifying linear algebra} (\href{https://math.virginia.edu/seminars/colloq/2021-22/}{link}) \hfill December 2021
+
+
+\item[$\cdot$] Conference "Monoidal and 2-categories in representation theory and categorification",\\
+\j held virtually at the Hausdorff Institute for Mathematics,\\
+\j \emph{Soergel bimodules and the Carlsson-Mellit algebra} \hfill December 2020 
+
+
+
+\item[$\cdot$]QUACKS conference (QUAntum groups, Categorification, Knot invariants, and Soergel bimodules ),\\
+\j held virtually at University of Oregon\\
+\j \emph{Curved Hecke categories}\hfill August 2020
+
+ 
+\item[$\cdot$]Nearly Carbon Neutral Geometric Topology conference\\
+\j \emph{Khovanov-Rozansky homology of torus links (and beyond)}\hfill May 2020
+
+\item[$\cdot$]Topology Seminar, Stanford University \\
+\j \emph{Deformed Khovanov-Rozansky homology and the isospectral Hilbert scheme}\hfill March 2020
+
+\item[$\cdot$]Worskhop "Soergel Bimodules and Categorification of the Braid Group" \\
+\j \emph{Cocenter of the Soergel category}\hfill March 2020
+
+
+\item[$\cdot$]Topology Seminar, SUNY Albany\\
+\j\emph{Hecke Algebras, Symmetric Functions, and Their Categorification}\hfill February 2020
+
+\item[$\cdot$]Topology Seminar, Boston College\\
+\j \emph{Derived annular link homology}\hfill November 2019
+% November 7 2019
+%The subject of annular link homology concerns the categorification of skein modules of the solid torus S^1 x D^2.  Decategorified, such skein modules have many interesting algebraic structures (e.g. operators corresponding to the Dehn twist along a meridian disk, or insertion of a link in a neighborhood the boundary S^1 x S^1 x I) and it would be desireable for the categorification to have analogues of these structures as well.  At present there are many annular link homology theories, but so far none appearing in literature admit categorical analogues of the Dehn twist or action of the skein of the torus.  The issue is that the current annular technology is not ``sufficiently derived’’.  In this talk I will discuss a proposed solution to this problem, which is the notion of derived horizontal trace introduced in joint work with Eugene Gorsky and Paul Wedrich.  For concretenesss I will explain all the constructions in the context of Khovanov homology.
+
+\item[$\cdot$]Algebra Seminar, UCLA\\
+\j \emph{Trace of the Hecke category}\hfill October 2019
+% October 11 2019
+
+\item[$\cdot$]GPRT Seminar, Northeastern University,\\
+\j \emph{Trace of the Hecke category}\hfill September 2019
+%September 26 2019
+
+
+\item[$\cdot$]Workshop ``Hilbert schemes, categorification and combinatorics'', UC Davis\\
+\j \emph{Derived traces of the type A Hecke category}\hfill June 2019
+%June 21 2019
+
+
+\item[$\cdot$]Topology seminar, UNC Chapell Hill\\
+\j \emph{Serre duality for Khovanov-Rozansky homology}\hfill March 2019
+
+\item[$\cdot$]Workshop ``Cat\'{e}gorification en topologie et th\'{e}orie des repr\'{e}sentations'', University of Caen\\
+\j \emph{Khovanov-Rozansky homology and Hilbert schemes of points (2 lectures)}\hfill February 2019
+
+
+\item[$\cdot$]Workshop ``Representation theory connections to (q,t)-combinatorics'', BIRS, Banff, CA\\
+\j\emph{How to compute superpolynomials},\hfill January 2019
+
+
+\item[$\cdot$]Worskhop ``Categorification in quantum topology and beyond'', ESI, Vienna\\
+\j \emph{Curved Soergel bimodules and Khovanov-Rozansky homology (2 lectures)}\hfill January 2019 
+
+
+\item[$\cdot$]Geometric representation theory seminar, MIT\\
+\j \emph{The curved Hecke category and the isospectral Hilbert scheme}\hfill October 2018
+
+\item[$\cdot$]Berkeley string math seminar, UC Berkeley\\
+\j \emph{Monodromic deformation of Khovanov-Rozansky homology and Hilbert schemes}\hfill October 2018
+
+
+\item[$\cdot$]Workshop ``Categorified Hecke algebras, link homology, and Hilbert schemes'', AIM\\
+\j\emph{Soergel bimodules and Khovanov-Rozansky homology}\hfill October 2018
+
+\item[$\cdot$]Conference ``Categorification and higher representation theory'', Mittag-Leffler Institute\\
+\j  \emph{Soergel bimodules, polygraphs, and Hilbert schemes} \hfill July 2018  % Wed, July 11 CATEGORIFICATION AND HIGHER REPRESENTATION THEORY
+
+\item[$\cdot$]Mathematical physics seminar, Perimeter Institute\\
+\j \emph{Curved complexes, deformation of Khovanov-Rozansky homology, and Hilbert schemes} \hfill May 2018  %Thursday, May 18, https://www.perimeterinstitute.ca/videos/tba-49
+
+\item[$\cdot$]Algebra and geometry seminar, Caltech\\
+\j\emph{Curved complexes, Khovanov-Rozansky homology, and Hilbert schemes},\hfill April 2018  % April 9, http://www.caltech.edu/content/algebra-and-geometry-seminar-16
+
+\item[$\cdot$]Conference ``Categorification in mathematical physics'', Simons Center for Geometry and Physics \\
+%http://scgp.stonybrook.edu/video_portal/results.php?event_id=223
+\j  \emph{Curved complexes, Khovanov-Rozansky homology, and Hilbert schemes} \hfill April 2018  
+
+\item[$\cdot$]Conference ``Quantum knot homology and supersymmetric gauge theories'', Aspen Center for Physics\\
+\j \emph{Curved complexes, Khovanov-Rozansky homology, and Hilbert schemes},\hfill March 2018 %TUESDAY, March 6
+
+
+\item[$\cdot$]Lie group and representation theory seminar, University of Maryland\\
+\j \emph{Categorification of Young idempotents}\hfill February 2018  % Feb 21
+
+\item[$\cdot$]Topology seminar, UCLA\\
+\j \emph{Curved complexes, Khovanov-Rozansky homology, and Hilbert schemes}\hfill January 2018
+
+\item[$\cdot$]Conference ``Algebraic structures in geometry and topology,'' Riederalp, Switzerland\\
+\j {\em Link splitting and y-ification of Khovanov-Rozansky homology}\hfill January 2018
+
+\item[$\cdot$]Special Session ``Quantum Link Invariants, Khovanov Homology, and Low-dimensional Manifolds,'' JMM\\
+\j {\em Link splitting and y-ification of Khovanov-Rozansky homology} \hfill  January 2018
+
+
+\item[$\cdot$]Special session``Rational Cherednik algebras and categorification,'' AMS meeting, UC Riverside\\
+\j {\em Curved complexes, Soergel bimodules, and the isospectral Hilbert scheme} \hfill  November 2017
+
+
+\item[$\cdot$]Special session``Combinatorial representation theory,'' AMS meeting, UC Riverside\\
+\j {\em Torus links and Catalan combinatorics} \hfill  November 2017
+
+
+\item[$\cdot$]Special session``Combinatorial aspects of the polynomial ring,'' AMS meeting, UC Riverside\\
+\j {\em Braids, symmetric functions, and shuffle conjectures} \hfill  November 2017
+
+
+\item[$\cdot$]Special session ``Symmetry in algebra, topology, and 
+physics'', Math.~Cong.~of the Americas, McGill,\\
+\j \emph{Categorical Diagonalization} \hfill  July 2017
+
+
+\item[$\cdot$]Conference ``Representation Theory and Combinatorics of Torus Links,'' UMass Amherst\\
+\j\emph{How to compute some link homologies}\hfill July 2017
+
+
+\item[$\cdot$]Workshop ``Quantum topology and categorified representation theory,'' INI, Cambridge, UK\\
+\j \emph{Categorical diagonalization}\hfill June 2017
+
+
+\item[$\cdot$]Conference ``Equivariant combintarics,'' CRM, University de Montreal,\\
+\j \emph{Khovanov-Rozansky homology and the higher $q,t$ Catalan sequences}. \hfill June 2017
+
+
+
+
+
+\item[$\cdot$]Isaac Newton Institute HTL seminar, University of Cambridge,\\
+\j \emph{How to compute torus link homology}\hfill June 2017
+
+
+\item[$\cdot$]Workshop ``Physics and knot homologies,'' INI, University of Cambridge\\
+\j \emph{Khovanov-Rozansky homology and $q,t$ Catalan numbers} \hfill April 2017
+
+
+
+\item[$\cdot$]Topology seminar, Claremont College\\
+\j \emph{Torus knots and combinatorics}\hfill February 2017
+
+
+\item[$\cdot$]Workshop  ``Categorification, derived geometry and quantum cohomology,'' Paris 7\\
+\j \emph{Categorified Young symmetrizers and torus link homology, with
+ connections to\\
+ \j Hilbert schemes} (two lectures)  \hfill  January 2017
+
+
+\item[$\cdot$]Joint LA Topology seminar at UCLA\\
+\j\emph{Categorical diagonalization and link homology} \hfill  November 2016
+
+\item[$\cdot$]UCSD Combinatorics seminar\\
+\j \emph{Knot homology and the $q,t$ Catalan} \hfill September 2016
+
+
+\item[$\cdot$]WARTHOG ``Knot homologies, Hilbert schemes, and Cherednik algebras'', University of Oregon\\
+\j \emph{Categorical diagonalization} (two lectures) \hfill July 2016 
+
+\item[$\cdot$]Conference ``Advances in Quantum and Low-Dimensional Topology'',  U.~of Iowa \\
+\j\emph{Categorical diagonalization of the full twist}\hfill March 2016
+
+%\item[$\cdot$]{\em Stable homology of torus knots and categorified projections}\\
+%\item[$\cdot$]Knots in Washington XLI \conf \hfill  scheduled December 2015 
+
+\item[$\cdot$]Topology seminar, Michigan State University\\
+\j \emph{Stability phenomena in link homology}\hfill April 2016
+
+\item[$\cdot$]Special session ``Topological representation theory,'' Joint Mathematics Meetings, Seattle\\
+\j \emph{Diagonalization of the full twist} \hfill January 2016
+
+\item[$\cdot$]MIT special seminar\\
+\j \emph{Categorical diagonalization of the full twist} \hfill  November 2015
+
+
+
+\item[$\cdot$]Columbia University SGGTC seminar\\
+\j {\em Categorical diagonalization of the full twist} \hfill  November 2015
+
+
+
+\item[$\cdot$]Algebra seminar, UC Davis \\
+\j {\em Categorical diagonalization of the full twist} \hfill   October 2015 
+
+\item[$\cdot$]Topology seminar, Duke University\\
+\j {\em Categorical diagonalization of the full twist} \hfill October 2015 
+
+
+\item[$\cdot$]Special session``Geometric perspectives in knot theory,'' AMS sectional meeting, Loyola University\\
+\j {\em Stable homology of torus links, and a conjecture of Gorsky-Rasmussen} \hfill  October 2015
+
+
+\item[$\cdot$] Felix Klein seminar, University of Notre Dame\\
+\j	{\em On categorified Young symmetrizers} \hfill April 2015 
+
+
+\item[$\cdot$]University of Virginia geometry seminar\\
+\j	{\em The stable Khovanov-Rozansky homology of torus knots} \hfill  December 2014
+
+
+\item[$\cdot$] Joint IU/Vanderbilt operator algebras seminar, Vanderbilt University\\
+\j		{\em Singular Soergel bimodules and planar algebras} \hfill  November 2014
+
+\item[$\cdot$] Columbia SGGT seminar, Columbia University \\
+\j		{\em The stable Khovanov-Rozansky homology of torus knots}\hfill  October 2014
+
+
+\item[$\cdot$] WARTHOG ``Kazhdan-Lusztig Theory and Soergel Bimodules,'' University of of Oregon\\
+\j {\em Rouquier complexes} \hfill  Aug 2014
+
+\item[$\cdot$] International conference ``Quantum topology,'' Chelyabinsk, Russia\\
+\j{\em A quasi-local approach to link homology}\hfill   July 2014
+
+\item[$\cdot$] Special session ``Categorification in Representation Theory,'' AMS sectional meeting, UC Riverside\\
+\j {\em A quasi-local approach to link homology} \hfill November 2013
+
+
+\item[$\cdot$] Joint LA topology seminar, University of Southern California\\
+\j		{\em A quasi-local approach to link homology} \hfill November 2013
+
+
+\item[$\cdot$] UNC/Duke topology seminar, UNC\\
+\j		{\em A quasi-local approach to link homology} \hfill  October 2013
+
+\item[$\cdot$] Topology seminar, George Washington University\\
+\j		{\em SO(3) Kauffman Homology}  \hfill  April 2012
+
+
+\item[$\cdot$] Conference ``Knots in Washington XXXIV,'' George Washington University\\
+\j{\em Categorification of Generalized Jones-Wenzl Projectors} \hfill  March 2012
+
+\item[$\cdot$] Conference ``Homological Knot Invariants in Low-Dimensional Topology,'' SUNY Stony Brook\\
+\j		{\em Properties of categorified spin networks}\hfill  June 2011
+
+
+\item[$\cdot$] ``Graduate Student Topology and Geometry Conference,'' Michigan State University\\
+\j		{\em A Category for the chromatic polynomial}  \hfill April 2011
+
+
+\item[$\cdot$] Conference ``Knots in Washington XXXI,'' George Washington University\\
+\j		{\em SO(3) Kauffman Homology for graphs and links} \hfill  December 2010
+
+
+\item[$\cdot$] Symplectic geometry and gauge theory seminar, Columbia University\\
+\j {\em SO(3) Kauffman Homology of graphs and links}  \hfill November  2010
+%
+%
+\end{itemize}
+
+%\newitem{Other Talks Given}
+%\i		\textbf{Seminar at University of Virginia} \w
+%\j	  {\em Categorification of generalized Jones-Wenzl projectors}, March 2012\w
+%\j	  {\em A category for the chromatic polynomial}, April 2011\w
+%\j	  {\em A categorification of Jones-Wenzl projectors from representation theory}, October 2010\w
+%\j	  {\em Matrix factorizations and $\sl_n$ link homology}, September 2009\w
+%\j	  {\em Rasmussen's proof of the Milnor conjecture}, March 2009\w
+%\j	  {\em On Khovanov's categorification of the Jones polynomial}, February 2009\w
+%%
+%%
+%\i		\textbf{Informal Graduate Seminar at University of Virginia}\w
+%\j	  {\em Some bizarre problems in algebraic topology: a tribute to Kai-Uwe Bux}, February 2011\w
+%\j	  {\em Diagrammatic representation theory}, September 2010\w
+%\j	  {\em Clifford Algebras and Spin groups}, February 2010\w
+%\j	  {\em What is categorification? It's a real word I swear}, October 2009\w
+%\j	  {\em Classical mechanics and symplectic geometry}\w
+%\j	  {\em Hogantroduction to Lie algebras}\vskip5pt
+
+\newitem{Talks given at Northeastern University seminars}
+
+%\begin{itemize}\setlength{\itemsep}{5pt}
+%
+%
+%\item[$\cdot$]
+%
+%\item[$\cdot$]
+%
+%\item[$\cdot$]
+%
+%\item[$\cdot$]
+%
+%\item[$\cdot$]
+%\end{itemize}
+
+\newitem{Teaching Experience}
+
+\textbf{Northeastern University}\w
+\j Math 2321: Calculus 3 \hfill Fall 2024\w
+\j Math 7734: Readings in Representation Theory (Khovanov Homology) \hfill Fall 2024\w
+\j Math 2321: Calculus 3 \hfill Spring 2024\w
+\j Math 2321: Calculus 3 \hfill Fall 2023\w
+\j Math 2321: Honors Calculus 3 \hfill Fall 2023\w
+\j Math 2321: Calculus 3 \hfill Spring 2023\w
+\j Math 2331: Linear algebra \hfill Fall 2022\w
+\j Math 7721: Readings in Topology (Quantum Invariants)\hfill Spring 2022\w
+\j Math 2331: Linear algebra \hfill Spring 2022\w
+\j Math 2331: Linear algebra \hfill Fall 2021\w
+\j Math 1342: Calculus 2 \hfill Fall 2021\w
+\j Math 2331: Linear algebra \hfill Spring 2021\w
+\j Math 2331: Linear algebra \hfill Fall 2020\w
+\j Math 2331: Linear algebra\hfill Spring 2020\w
+\j Math 1365: Introduction to mathematical reasoning\hfill Fall 2019\w
+
+\textbf{University of Southern California}\w
+\j Math 125: Calculus I (two sections)\hfill Fall 2018\w
+\j Math 126: Calculus II\hfill Spring 2018\w
+\j Math 425:  Complex analysis \hfill Spring 2018\w
+\j Math 126: Calculus II\hfill Fall 2017\w
+\j Math 225: Linear algebra and differential equations\hfill Spring 2017\w
+\j Math 117: Precalculus for Business and Economics (two sections) \hfill Fall 2016\w
+
+\textbf{Indiana University}\w
+\j Math M624: Quantum Invariants (topics course) \hfill Spring 2016\w
+\j Math M311: Calculus III (two sections) \hfill Fall 2015\w
+\j Math S343: Honors Ordinary Differential Equations I \hfill Spring 2016\w
+\j Math M343: Ordinary Differential Equations I \hfill Fall 2015\w
+\j Math M118: Finite Mathematics \hfill Spring 2014\w
+\j Math M212: Calculus  II \hfill  Spring 2014\w
+\j Math M211: Calculus I (two sections) \hfill Fall 2013\w
+
+%\pagebreak 
+\textbf{University of Virginia}\w
+\j  Math 1310: Calculus I \hfill Fall 2012\w
+\j  Math 1310: Calculus I \hfill Fall 2010\w
+\j  Math 1220: Applied Calculus II \hfill Spring 2010\w
+\j  Math 1220: Applied Calculus II \hfill Fall 2009\w
+\j Math 122: Applied Calculus II \hfill  Spring 2009\w
+\j Math 121: Applied Calculus I \hfill  Fall 2008\w
+\j Math 325: Differential Equations (TA) \hfill Spring 2008\w
+\j Math 325: Differential Equations (TA) \hfill Fall 2007\vskip5pt
+
+\v
+
+\newitem{Organizational activities}
+\begin{itemize}\setlength{\itemsep}{4pt}
+
+\newpage
+\newitem{Programs / special semesters participated in}
+
+\begin{itemize}\setlength{\itemsep}{4pt}
+\item[$\cdot$] Participant in Simons semester ``Knots, homologies, and physics'' in Warsaw, June 2024 (\href{https://simons2024.fuw.edu.pl/}{website})
+
+
+\item[$\cdot$] Participant in semester program in ``Braids'' at ICERM, Spring 2022 (\href{https://icerm.brown.edu/program/semester_program/sp-s22}{website})
+
+
+\item[$\cdot$] Participant in semester program ``Homology theories in low-dimensional topology'' at the Isaac Newton Institute, Cambridge England, May 2017-June 2017 (\href{https://api.newton.ac.uk/website/v0/events/htl/reports/scientific-report/}{website})
+
+\item[$\cdot$] Participant in the ``Semester on 4-manifolds and their combinatorial invariants'' at the Max Planck Institute, Bonn Germany, January 2013 - June 2013 (\href{https://people.mpim-bonn.mpg.de/teichner/Math/4-Manifolds.html}{website})
+\end{itemize}
+
+\newitem{Dissertation committees served on}
+\begin{itemize}\setlength{\itemsep}{5pt}
+
+
+\item[$\cdot$] Ph.D. committee member for Hongqin Zou, NEU, 2025
+\item[$\cdot$] Ph.D. committee member for Xiaochen (Tony) Xiao, NEU, 2024
+\item[$\cdot$] Ph.D. committee member for Vitor Emanuel Gulisz, NEU, 2024
+\item[$\cdot$] Chair of Ph.D. committee for Mohamed Elbehiry, Spring 2022
+\item[$\cdot$] Ph.D. committee member for Dmytro Matvieievskyi, NEU, 2022
+\item[$\cdot$] Ph.D. committee member for Alex Sorokin, NEU, 2022
+
+\item[$\cdot$]Ph.D. committee member for Aleksei Pakharev, NEU, 2021. 
+
+\end{itemize}
+
+\newitem{Graduate Student research and mentorship}
+
+\begin{itemize}\setlength{\itemsep}{5pt}
+\item[$\cdot$] Ph.D. advisor to Ali Cataltepe at NEU (since summer 2025)
+\item[$\cdot$] Ph.D. advisor to Connor Gallagher at NEU (since summer 2025)
+\item[$\cdot$] Reading course on Knot Floer homology with NEU graduate student Connor Gallagher, (Spring 2025) 
+
+\item[$\cdot$] Reading course on Categorification of Heisenberg algebras NEU graduate student Ali Cataltepe,  (Spring 2025)
+
+\item[$\cdot$] Ph.D. advisor to Mohamed Elbehiry at NEU  (2020-2022)
+
+\item[$\cdot$] Mentor to USC graduate student Nicolle Sandoval Gonzalez in aspects of professional development, mathematics research, and her Ph.D. thesis, (2017 - 2019)
+\end{itemize}
+
+\newitem{Undergraduate Research and Mentorship}
+
+\begin{itemize}\setlength{\itemsep}{5pt}
+\item[$\cdot$] Mentor to NEU undergraduate Luca Miniati in an independent study on Topology, (Fall 2024)
+
+\item[$\cdot$] Mentor to Daniel Abadjiev in a project on Knot Theory (as part of course Math 4020) (Fall 2023)
+
+\item[$\cdot$] Mentor to Matthew Stevens in a project on Hecke algebras and Link Polynomials, Matthew Stevens (as part of course Math 4020) (Fall 2021)
+
+\item[$\cdot$] Mentor to USC undergraduate Kelley Yang in independent study in group theory (Math 490, 2 credit hours) Fall 2018
+
+\item[$\cdot$]Mentor in a research project with USC undergraduate Lewis Wang in Catalan Combinatorics, (Fall 2017)
+
+\item[$\cdot$]IU STARS (Science, Technology, and Research Scholars) mentor to an IU undergraduate, (Fall 2014-Spring 2015)\\
+Description: independent study and research with an IU undergraduate in knot theory.\
+
+\end{itemize}
+
+\newitem{Service activities at Northeastern}
+
+\begin{itemize}\setlength{\itemsep}{5pt}
+
+\item[$\cdot$] Co-organizer of Putnam Club at Northeastern (Fall 2024)
+
+\item[$\cdot$] Member of ZPF (Zelevinsky Postdoctoral Fellowship) committee (AY 2020-2025)
+
+\item[$\cdot$] Member of Graduate Committee (AY 2019-2024)
+
+\item[$\cdot$] Member of Colloquium committee (AY 2023-2025)
+\item[$\cdot$] Math department liason to the Northeastern library (AY 2020-2025)
+
+\item[$\cdot$] Member of RTG group (AY 2019-2022)
+
+
+
+\end{itemize}
+
+
+\newitem{Other Service and professional activities}
+
+\begin{itemize}
+\item[$\cdot$] Reviewer for AMS Math Reviews \hfill June 2018 - present.\v
+
+\item[$\cdot$] Geometry/Topology qualifying exam committee member at USC. \hfill Spring 2018\v
+
+\item[$\cdot$]  Co-organizer of USC Categorification Seminar \hfill 2016-2019
+
+\item[$\cdot$]Oral exam committee member for IU graduate student Josh Edge. \hfill Spring 2016\v
+
+
+%\j   Academic resource and informal mentor Supporter of several USC graduate students.\v
+
+\item[$\cdot$] 	Faculty co-mentor of the IU math club (with Keenan Kidwell) \hfill Fall 2015-Spring 2016\v
+
+\item[$\cdot$]Co-organizer of IU Quantum Topology seminar (with Noah Snyder) \hfill  Spring 2015-Spring 2016\v
+
+
+\item[$\cdot$] Referee for  Quantum Topology, Geometry and Topology, Algebraic and Geometric Topology, Compositio Math., Indiana Journal of Math., Topology Proceedings, JCTA
+\end{itemize}
+\end{document}
+\newitem{Conferences Attended} 
+\j Young Researchers Workshop on Higher Algebraic and Geometric Structures:\\
+\j Modern Methods in Representation Theory, Univ.~of Toronto, May 2012\w
+\j Southeastern Lie Theory Workshop, NCSU, April 2012\w
+\j Knots in Washington, GWU, March 2012\w
+\j Homological Invariants in Low-Dimensional Topology, SUNY Stony Brook, June 2011\w
+\j Low-Dimensional Topology, High Dimensional Categories (in honor of Mike Freedman),\\
+\j UC Berkeley, June 2011\w
+\j Southeastern Lie Theory Workshop, UVA, June 2011\w
+\j Knots in Washington, GWU, December 2010\w
+\j Low Dimensional Topology and Categorification, SUNY Stony Brook, June 2010\w
+\j Research Workshop: Homology theories for knots and links, MSRI, March 2010\w
+\j Introductory Workshop: Homology theories for knots and links, MSRI, January 2010\w
+\j Knots in Washington, GWU, December 2009\w
+\j Georgia International Topology Conference, UGA, May 2009
+%\newitem{Personal Activities and Interests}
+%\indent Guitar, singing bass, climbing trees 
